@@ -5,7 +5,7 @@ $koneksiObj=new Koneksi();
 $koneksi= $koneksiObj->ambilKoneksi();
 
 if($koneksi->connect_error) {
-	die("Konesi Gagal : " . $koneksi->connect_error);
+	die("Koneksi Gagal : " . $koneksi->connect_error);
 }else{
 	echo "Koneksi ke basis data sukses!";
 }
@@ -17,7 +17,7 @@ $_POST['jurusan']."')";
 
 //echo "<br><br>".$query;
 if($koneksi->query($query)==true){
-	echo "<br>Data Mahasiswa degan nama ". $_POST["nama"]." sudah tersimpan ".
+	echo "<br>Data Mahasiswa dengan nama ". $_POST["nama"]." sudah tersimpan ".
 	'<a href="index.php">Klik disini</a>';
 
 }else {

@@ -2,12 +2,18 @@
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<title>Data Mahasiswa</title>
+<link rel="icon" href="img/icon_mhs.png">
 </head>
+
 <body>
-<h2>Aplikasi Data Mahasiswa</h2>
+<div class="jumbotron jumbotron-fluid">
+<h2 class="display-4 text-center">Aplikasi Data Mahasiswa</h2>
+</div>
+
 <hr>
 <form class="" action="tambah.php" method="get">
-<input type="submit" name="submit" value="Tambah Data">
+<input type="submit" name="submit" value="Tambah Data" class="btn btn-outline-primary">
 </form>
 
 <?php
@@ -33,6 +39,11 @@ $data = $koneksi->query($qry);
 		<th colspan="2">OPSI</th>
   </tr>
 
+<div id="footer">
+        Copyright &copy; 2018
+        Designed by Fauziah Nur Rahmawati
+    </div>
+    
   <?php
   if ($data -> num_rows <= 0){
     echo "<tr><td>";

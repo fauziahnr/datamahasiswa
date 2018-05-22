@@ -1,4 +1,4 @@
-<h2>Fomrmulir Tambah Data Mahasiswa</h2>
+<h2>Form Tambah Data Mahasiswa</h2>
 
 <hr>
 <form action="simpan.php" method="POST">
@@ -21,10 +21,8 @@
     <td><input type ="text" name="jurusan"></td>
 </tr>
 <tr>
-    <td><input type="submit" value="Simpan"></td>
-    <td> <input type="button" value="Batal"> </td>
-
-
+   <td><input type="submit" value="Simpan" class="btn btn-primary"></td>
+   <td><input type="button" value="Batal" class="btn btn-primary"></td>
 </tr>
 </table>
 <a href="index.php">kembali</a>

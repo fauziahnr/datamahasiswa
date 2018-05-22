@@ -5,7 +5,7 @@ $koneksiObj=new Koneksi();
 $koneksi= $koneksiObj->ambilKoneksi();
 
 if($koneksi->connect_error) {
-	die("Konesi Gagal : " . $koneksi->connect_error);
+	die("Koneksi Gagal : " . $koneksi->connect_error);
 }else{
 	echo "Koneksi ke basis data sukses!";
 }
