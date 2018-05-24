@@ -2,7 +2,7 @@
 class Koneksi{
   private $server="localhost";
   private $username="id476822_dev1";
-  private $password = "fauziahnur";
+  private $password = "fauziah";
   private $db = "id476822_mahasiswa";
   private $hubungan;
 
